@@ -324,6 +324,10 @@ section {
   margin: auto 0;
 }
 
+.text-container p {
+  text-align: justify;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -356,6 +360,15 @@ section {
   justify-content: space-around;
 }
 
+.exp-article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
 article {
   display: flex;
   width: 10rem;
@@ -371,6 +384,7 @@ article .icon {
 
 #projects {
   position: relative;
+  
 }
 
 .color-container {
@@ -399,7 +413,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 40vh;
 }
 
 .contact-info-upper-container {
@@ -427,6 +441,11 @@ article .icon {
 
 .contact-icon {
   cursor: default;
+}
+
+.contact-info-container .phone-number:hover {
+  color: #00c0ff;
+  text-decoration: none;
 }
 
 /* FOOTER SECTION */
