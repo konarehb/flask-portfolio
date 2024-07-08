@@ -199,7 +199,7 @@
               <div class="article-container">
                 <article>
                   <img
-                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                    src="{{ url_for('static', filename='assets/professional.png') }}"
                     alt="Experience icon"
                     class="icon"
                   />
@@ -210,34 +210,12 @@
                 </article>
                 <article>
                   <img
-                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                    src="{{ url_for('static', filename='assets/professional.png') }}"
                     alt="Experience icon"
                     class="icon"
                   />
                   <div>
                     <h3 class="skill-h3">Node JS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3 class="skill-h3">Express JS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3 class="skill-h3">Git</h3>
                     <p>Intermediate</p>
                   </div>
                 </article>
@@ -313,5 +291,40 @@
           onclick="location.href='#contact'"
         />
       </section>
+      <section id="contact">
+        <p class="section__text__p1">Prendre Contact</p>
+        <h1 class="title">Contactez-Moi</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="{{ url_for('static', filename='assets/mail-blue.png') }}"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:konarehb@gmail.com">konarehb@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="{{ url_for('static', filename='assets/phone-blue.png') }}"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a>(+223) 73 46 93 34</a></a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">À Propos</a></li>
+              <li><a href="#experience">Expériences</a></li>
+              <li><a href="#projects">Projets</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; {{ current_year }} Badié Hamidou Konaré. Tous Droits Reservés.</p>
+      </footer>
 </body>
 </html>
