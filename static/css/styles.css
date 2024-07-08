@@ -88,7 +88,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   transition: all 0.3 ease-in-out;
 }
 
@@ -405,7 +405,7 @@ article .icon {
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: #00c0ff;
   background: (250, 250, 250);
@@ -427,10 +427,6 @@ article .icon {
 
 .contact-icon {
   cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
 }
 
 /* FOOTER SECTION */
