@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konarehb Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/k-logo.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaqueries.css') }}">
 </head>
@@ -98,7 +99,7 @@
                   alt="Education icon"
                   class="icon"
                 />
-                <h3 class="title-h3">Éducation</h3>
+                <h3 class="title-h3">Formation</h3>
                 <p>Master et Licence en Informatique</p>
               </div>
             </div>
@@ -131,7 +132,7 @@
               <div class="article-container">
                 <article>
                   <img
-                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                    src="{{ url_for('static', filename='assets/verified-badge.png') }}"
                     alt="Experience icon"
                     class="icon"
                   />
@@ -144,7 +145,7 @@
                 </article>
                 <article>
                   <img
-                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                    src="{{ url_for('static', filename='assets/verified-badge.png') }}"
                     alt="Experience icon"
                     class="icon"
                   />
@@ -158,21 +159,21 @@
                 </article>
                 <article>
                   <img
-                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                    src="{{ url_for('static', filename='assets/verified-badge.png') }}"
                     alt="Experience icon"
                     class="icon"
                   />
                   <div>
                     <h3 class="skill-h3">Frameworks</h3>
+                    <p>Flask</p>
                     <p>Angular</p>
                     <p>Spring Boot</p>
-                    <p>Ionic</p>
                     <p>jQuery</p>
                   </div>
                 </article>
                 <article>
                   <img
-                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                    src="{{ url_for('static', filename='assets/verified-badge.png') }}"
                     alt="Experience icon"
                     class="icon"
                   />
@@ -185,7 +186,7 @@
                 </article>
                 <article>
                   <img
-                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                    src="{{ url_for('static', filename='assets/verified-badge.png') }}"
                     alt="Experience icon"
                     class="icon"
                   />
@@ -324,7 +325,10 @@
         </div>
       </section>
       <footer>
-        <nav>
+        <div class="logo" id="footer-logo">
+          <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='assets/k-logo.png') }}"></a>
+        </div>
+        <nav class="footer-nav">
           <div class="nav-links-container">
             <ul class="nav-links">
               <li><a href="#about">À Propos</a></li>

@@ -80,15 +80,15 @@
   }
   #contact,
   footer {
-    height: 40vh;
+    height: fit-content;
   }
   #profile {
     height: auto;
     margin-bottom: 0;
   }
-  /* #projects {
-    margin-top: 2rem;
-  } */
+  footer p {
+    padding-bottom: 3rem;
+  }
   .article-container {
     justify-content: space-between;
   }
