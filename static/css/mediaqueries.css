@@ -1,7 +1,7 @@
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
   .about-containers {
     flex-wrap: wrap;
@@ -25,7 +25,14 @@
   }
   #profile,
   .section-container {
-    display: flex;
+    display: block;
+  }
+  #profile {
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  #projects {
+    margin-top: 2rem;
   }
   .arrow {
     display: none;
@@ -38,12 +45,15 @@
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
+    width: auto;
     margin: 2rem 2rem;
+    justify-content: center;
   }
   .about-containers {
     margin-top: 0;
+  }
+  .nav-links {
+    font-size: 1.25rem;
   }
 }
 
@@ -61,6 +71,9 @@
   #profile {
     height: 83vh;
     margin-bottom: 0;
+  }
+  #projects {
+    margin-top: 2rem;
   }
   article {
     font-size: 1rem;
@@ -94,7 +107,7 @@
     font-size: 1rem;
   }
   .contact-icon {
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     text-align: center;
   }
   .experience-sub-title {

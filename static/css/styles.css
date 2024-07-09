@@ -194,6 +194,10 @@ section {
   margin-bottom: 2rem;
 }
 
+.section__text #lastname {
+  color: #00c0ff;
+}
+
 .title {
   font-size: 3rem;
   text-align: center;
@@ -270,6 +274,7 @@ section {
 
 .btn-container {
   gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 /* ABOUT SECTION */
@@ -307,6 +312,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
+  height: fit-content;
   border-radius: 2rem;
   border: #00c0ff 0.1rem solid;
   border-color: #00c0ff;
@@ -325,7 +331,7 @@ section {
 }
 
 .text-container p {
-  text-align: justify;
+  text-align: left;
 }
 
 /* EXPERIENCE SECTION */
@@ -360,13 +366,9 @@ section {
   justify-content: space-around;
 }
 
-.exp-article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+.project-img {
+  width: 100%;
+  height: auto;
 }
 
 article {
@@ -384,7 +386,7 @@ article .icon {
 
 #projects {
   position: relative;
-  
+  margin-top: 5rem;
 }
 
 .color-container {
@@ -448,11 +450,16 @@ article .icon {
   text-decoration: none;
 }
 
+.contact-info-container #txt-mail:hover {
+  color: #00c0ff;
+  text-decoration: none;
+}
+
 /* FOOTER SECTION */
 
 footer {
   height: 26vh;
-  margin: 0 1rem;
+  margin: 1rem 1rem;
 }
 
 footer p {

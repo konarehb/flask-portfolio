@@ -12,8 +12,9 @@
         <div class="logo"><a href="{{ url_for('index') }}">Konarehb</a></div>
         <div>
           <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Accueil</a></li>
             <li><a href="#about">À Propos</a></li>
-            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#experience">Expérience</a></li>
             <li><a href="#projects">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -28,8 +29,9 @@
             <span></span>
           </div>
           <div class="menu-links">
+            <li><a href="{{ url_for('index') }}" onclick="toggleMenu()">Accueil</a></li>
             <li><a href="#about" onclick="toggleMenu()">À Propos</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Expériences</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </div>
@@ -41,13 +43,14 @@
         </div>
         <div class="section__text">
           <p class="section__text__p1">Salut, Je suis</p>
-          <h1 class="title">Badié Hamidou Konaré</h1>
+          <h1 class="title">Badié Hamidou <span id="lastname">Konaré</span></h1>
           <p class="section__text__p2">Ingénieur Développeur</p>
           <div class="btn-container">
-            <button
-              class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-              Télécharger CV
-            </button>
+            <form action="/open_cv" method="post" target="_blank">
+              <button class="btn btn-color-2" type="submit">
+                Télécharger CV
+              </button>
+            </form>
             <button class="btn btn-color-1" onclick="location.href='#contact'">
               Me Contacter
             </button>
@@ -57,13 +60,13 @@
               src="{{ url_for('static', filename='assets/linkedin.png') }}"
               alt="My LinkedIn profile"
               class="icon"
-              onclick="location.href='https://linkedin.com/'"
+              onclick="window.open('https://www.linkedin.com/in/konarehb')"
             />
             <img
               src="{{ url_for('static', filename='assets/github.png') }}"
-              alt="My Github profile"
+              alt="My GitHub profile"
               class="icon"
-              onclick="location.href='https://github.com/'"
+              onclick="window.open('https://github.com/konarehb', '_blank')"
             />
           </div>
         </div>
@@ -134,8 +137,10 @@
                     class="icon"
                   />
                   <div>
-                    <h3 class="skill-h3">HTML</h3>
-                    <p>Experienced</p>
+                    <h3 class="skill-h3">Frontend</h3>
+                    <p>JavaScript</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
                   </div>
                 </article>
                 <article>
@@ -145,8 +150,11 @@
                     class="icon"
                   />
                   <div>
-                    <h3 class="skill-h3">CSS</h3>
-                    <p>Experienced</p>
+                    <h3 class="skill-h3">Backend</h3>
+                    <p>Java</p>
+                    <p>Python</p>
+                    <p>SQL</p>
+                    <p>NoSQL</p>
                   </div>
                 </article>
                 <article>
@@ -156,8 +164,11 @@
                     class="icon"
                   />
                   <div>
-                    <h3 class="skill-h3">SASS</h3>
-                    <p>Intermediate</p>
+                    <h3 class="skill-h3">Frameworks</h3>
+                    <p>Angular</p>
+                    <p>Spring Boot</p>
+                    <p>Ionic</p>
+                    <p>jQuery</p>
                   </div>
                 </article>
                 <article>
@@ -167,8 +178,10 @@
                     class="icon"
                   />
                   <div>
-                    <h3 class="skill-h3">JavaScript</h3>
-                    <p>Basic</p>
+                    <h3 class="skill-h3">Collaboration</h3>
+                    <p>Git</p>
+                    <p>GitHub</p>
+                    <p>Docker</p>
                   </div>
                 </article>
                 <article>
@@ -178,71 +191,40 @@
                     class="icon"
                   />
                   <div>
-                    <h3 class="skill-h3">TypeScript</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3 class="skill-h3">Material UI</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                    <img
-                      src="{{ url_for('static', filename='assets/checkmark.png') }}"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3 class="skill-h3">Material UI</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="{{ url_for('static', filename='assets/checkmark.png') }}"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3 class="skill-h3">Material UI</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-              </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Expériences Pro.</h2>
-              <div class="exp-article-container">
-                <article>
-                  <img
-                    src="{{ url_for('static', filename='assets/professional.png') }}"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3 class="skill-h3">Stagiaire DBA Oracle</h3>
-                    <p>DGI Mali<br>2023</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="{{ url_for('static', filename='assets/professional.png') }}"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3 class="skill-h3">Développeur Full-stack</h3>
-                    <p>Rhapsodie <br>2020 - 2023</p>
+                    <h3 class="skill-h3">Cloud</h3>
+                    <p>Firebase</p>
+                    <p>BackBlaze B2</p>
                   </div>
                 </article>
               </div>
+            </div>
+           
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Expériences Pro.</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="{{ url_for('static', filename='assets/professional.png') }}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="skill-h3">Stagiaire DBA Oracle</h3>
+                  <p>DGI Mali<br>2023</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="{{ url_for('static', filename='assets/professional.png') }}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="skill-h3">Développeur Full-stack</h3>
+                  <p>Rhapsodie <br>2020 - 2023</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
@@ -260,48 +242,50 @@
             <div class="details-container color-container">
               <div class="article-container">
                 <img
-                  src="{{ url_for('static', filename='assets/project-1.jpg') }}"
+                  src="{{ url_for('static', filename='assets/konarehb.png') }}"
                   alt="Project 1"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Projet 1</h2>
+              <h2 class="experience-sub-title project-title">Konarehb Portfolio</h2>
+              <p>Python, Flask, HTML, CSS, Docker</p>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="window.open('https://github.com/konarehb/flask-portfolio')"
                 >
-                  Github
+                  GitHub
                 </button>
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="window.open('')"
                 >
-                  Démo Live
+                  Docker
                 </button>
               </div>
             </div>
             <div class="details-container color-container">
               <div class="article-container">
                 <img
-                  src="{{ url_for('static', filename='assets/project-1.jpg') }}"
+                  src="{{ url_for('static', filename='assets/rhapsodie.png') }}"
                   alt="Project 1"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Projet 2</h2>
+              <h2 class="experience-sub-title project-title">Rhapsodie</h2>
+              <p>Java, JavaScript, HTML, CSS</p>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="window.open('https://app-rhapsodie.web.app')"
                 >
-                  Github
+                  Site Web
                 </button>
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="window.open('https://play.google.com/store/apps/details?id=com.rhapsodie')"
                 >
-                  Démo Live
+                  App Android
                 </button>
               </div>
             </div>
@@ -324,7 +308,7 @@
               alt="Email icon"
               class="icon email-icon"
             />
-            <p><a href="mailto:konarehb@gmail.com">konarehb@gmail.com</a></p>
+            <p><a href="mailto:konarehb@gmail.com" id="txt-mail">konarehb@gmail.com</a></p>
           </div>
           <div class="contact-info-container">
             <img
@@ -340,8 +324,9 @@
         <nav>
           <div class="nav-links-container">
             <ul class="nav-links">
+              <li><a href="{{ url_for('index') }}">Accueil</a></li>
               <li><a href="#about">À Propos</a></li>
-              <li><a href="#experience">Expériences</a></li>
+              <li><a href="#experience">Expérience</a></li>
               <li><a href="#projects">Projets</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
