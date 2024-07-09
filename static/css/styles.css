@@ -58,11 +58,22 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  padding-top: 0rem;
+}
+
+.logo img {
+  width: 12vh;
+  height: 12vh;
 }
 
 .logo:hover {
   cursor: default;
+}
+
+#desktop-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
 }
 
 /* HAMBURGER MENU */
@@ -373,9 +384,9 @@ section {
 
 article {
   display: flex;
-  width: 10rem;
+  width: fit-content;
   justify-content: space-around;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 article .icon {
@@ -386,7 +397,7 @@ article .icon {
 
 #projects {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .color-container {
@@ -415,7 +426,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 40vh;
+  height: auto;
 }
 
 .contact-info-upper-container {

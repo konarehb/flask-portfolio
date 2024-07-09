@@ -9,10 +9,11 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo"><a href="{{ url_for('index') }}">Konarehb</a></div>
+        <div class="logo">
+          <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='assets/k-logo.png') }}"></a>
+        </div>
         <div>
           <ul class="nav-links">
-            <li><a href="{{ url_for('index') }}">Accueil</a></li>
             <li><a href="#about">À Propos</a></li>
             <li><a href="#experience">Expérience</a></li>
             <li><a href="#projects">Projets</a></li>
@@ -21,28 +22,26 @@
         </div>
       </nav>
       <nav id="hamburger-nav">
-        <div class="logo">Konarehb</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="logo">
+          <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='assets/k-logo.png') }}"></a>
+        </div>        
+        <!-- <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">À Propos</a></li>
+              <li><a href="#experience">Expérience</a></li>
+              <li><a href="#projects">Projets</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
-          <div class="menu-links">
-            <li><a href="{{ url_for('index') }}" onclick="toggleMenu()">Accueil</a></li>
-            <li><a href="#about" onclick="toggleMenu()">À Propos</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
-        </div>
+        </nav> -->
       </nav>
       <section id="profile">
         <div class="section__pic-container">
           <img src="{{ url_for('static', filename='assets/profile_pic.png') }}" alt="Badié Hamidou Konaré profile picture" />
         </div>
         <div class="section__text">
-          <p class="section__text__p1">Salut, Je suis</p>
+          <p class="section__text__p1">Salut, Je Suis</p>
           <h1 class="title">Badié Hamidou <span id="lastname">Konaré</span></h1>
           <p class="section__text__p2">Ingénieur Développeur</p>
           <div class="btn-container">
@@ -124,7 +123,7 @@
       </section>
       <section id="experience">
         <p class="section__text__p1">Mon Parcours</p>
-        <h1 class="title">Expériences</h1>
+        <h1 class="title">Expérience</h1>
         <div class="experience-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -198,7 +197,7 @@
                 </article>
               </div>
             </div>
-           
+            
           </div>
           <div class="details-container">
             <h2 class="experience-sub-title">Expériences Pro.</h2>
@@ -211,7 +210,9 @@
                 />
                 <div>
                   <h3 class="skill-h3">Stagiaire DBA Oracle</h3>
-                  <p>DGI Mali<br>2023</p>
+                  <p>Direction Générale des Impôts du Mali (DGI)
+                    <br>23/01/2023 - 23/06/2023
+                    <br>Bamako, Mali</p>
                 </div>
               </article>
               <article>
@@ -222,7 +223,9 @@
                 />
                 <div>
                   <h3 class="skill-h3">Développeur Full-stack</h3>
-                  <p>Rhapsodie <br>2020 - 2023</p>
+                  <p>Rhapsodie
+                    <br>24/04/2020 - 01/01/2023
+                    <br>Bamako, Mali</p>
                 </div>
               </article>
             </div>
@@ -324,7 +327,6 @@
         <nav>
           <div class="nav-links-container">
             <ul class="nav-links">
-              <li><a href="{{ url_for('index') }}">Accueil</a></li>
               <li><a href="#about">À Propos</a></li>
               <li><a href="#experience">Expérience</a></li>
               <li><a href="#projects">Projets</a></li>
