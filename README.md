@@ -52,7 +52,7 @@ Pour déployer ce projet en utilisant Docker, suivez ces étapes :
 
 ![Capture d'écran 1](static/assets/screenshot1.png)
 ![Capture d'écran 2](static/assets/screenshot2.png)
-![Capture d'écran 2](static/assets/screenshot2.png)
+![Capture d'écran 2](static/assets/screenshot3.png)
 
 ## Contribuer
 
