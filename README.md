@@ -19,9 +19,9 @@ Bienvenue sur mon portfolio personnel développé avec Flask! 🌟
 - CSS3
 - Docker
 
-## Liens des Projets
+## Liens du Projet
 
-Voici les liens vers mes projets :
+Voici les liens du projet :
 
 - 🌐 **Site Live**: [Mon Portfolio Live](https://badiehk.firebaseapp.com)
 - 📦 **GitHub**: [Repository GitHub](https://github.com/konarehb/flask-portfolio)
