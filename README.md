@@ -23,7 +23,7 @@ Bienvenue sur mon portfolio personnel développé avec Flask! 🌟
 
 Voici les liens du projet :
 
-- 🌐 **Site Live**: [Mon Portfolio Live](https://konarehb-portfolio.web.app)
+- 🌐 **Site Live**: [Mon Portfolio Live](https://konarehb.vercel.app/)
 - 📦 **GitHub**: [Repository GitHub](https://github.com/konarehb/flask-portfolio)
 - 🐳 **Docker**: [Docker Hub](https://hub.docker.com/r/konarehb/flask-portfolio)
 
