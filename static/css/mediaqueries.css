@@ -117,6 +117,17 @@
     width: auto;
     margin: 0.5rem;
   }
+  .btn-color-1:hover {
+    background: #00c0ff;
+    color: white;
+  }
+  .btn-color-2:hover {
+    background: #1f1445;
+    color: white;
+  }
+  .btn-color-1:hover {
+    border: #00c0ff 0.1rem solid;
+  }
   .contact-info-upper-container {
     display: inline;
     justify-content: center;
