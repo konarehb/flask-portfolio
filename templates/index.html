@@ -46,7 +46,7 @@
           <h1 class="title">Badié Hamidou <span id="lastname">Konaré</span></h1>
           <p class="section__text__p2">Ingénieur Développeur</p>
           <div class="btn-container">
-            <form action="/open_cv" method="post" target="_blank">
+            <form action="/view_resume" method="post" target="_blank">
               <button class="btn btn-color-2" type="submit">
                 Télécharger CV
               </button>
@@ -91,7 +91,7 @@
                   class="icon"
                 />
                 <h3 class="title-h3">Expérience</h3>
-                <p>2+ ans <br />Développement Logiciel</p>
+                <p>2 ans+ <br />Développement Informatique</p>
               </div>
               <div class="details-container">
                 <img
@@ -100,14 +100,14 @@
                   class="icon"
                 />
                 <h3 class="title-h3">Formation</h3>
-                <p>Master et Licence en Informatique</p>
+                <p>Master en Génie Logiciel et Développement Web</p>
               </div>
             </div>
             <div class="text-container">
               <p>
-                Ingénieur Développeur passionné avec plus de deux ans d’expérience, 
-                je me spécialise en Python, Java et JavaScript. Autonome, collaboratif 
-                et adaptable, je possède d’excellentes compétences en communication. 
+                Ingénieur Développeur passionné avec plus de deux ans d'expérience,
+                je me spécialise en Flutter, Java et JavaScript. Autonome, collaboratif 
+                et adaptable, je possède d'excellentes compétences en communication. 
                 Bilingue en anglais et français, je suis dévoué à l'apprentissage continu 
                 et toujours à la recherche de nouvelles opportunités pour perfectionner mes 
                 compétences et apporter une valeur ajoutée à mon équipe.
@@ -139,8 +139,8 @@
                   <div>
                     <h3 class="skill-h3">Frontend</h3>
                     <p>JavaScript</p>
-                    <p>HTML</p>
-                    <p>CSS</p>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
                   </div>
                 </article>
                 <article>
@@ -151,8 +151,10 @@
                   />
                   <div>
                     <h3 class="skill-h3">Backend</h3>
+                    <p>Dart</p>
                     <p>Java</p>
                     <p>Python</p>
+                    <p>RESTful APIs</p>
                     <p>SQL</p>
                     <p>NoSQL</p>
                   </div>
@@ -165,9 +167,8 @@
                   />
                   <div>
                     <h3 class="skill-h3">Frameworks</h3>
+                    <p>Flutter</p>
                     <p>Flask</p>
-                    <p>Angular</p>
-                    <p>Spring Boot</p>
                     <p>jQuery</p>
                   </div>
                 </article>
@@ -192,15 +193,17 @@
                   />
                   <div>
                     <h3 class="skill-h3">Cloud</h3>
+                    <p>Google Cloud (GCP)</p>
                     <p>Firebase</p>
-                    <p>BackBlaze B2</p>
+                    <p>B2 Cloud Storage</p>
+                    <p>Vercel</p>
                   </div>
                 </article>
               </div>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Expériences Pro.</h2>
+            <h2 class="experience-sub-title">Professionnelle</h2>
             <div class="article-container">
               <article>
                 <img
@@ -209,9 +212,20 @@
                   class="icon"
                 />
                 <div>
+                  <h3 class="skill-h3">Stagiaire</h3>
+                  <p>Centre des Impôts de la Commune V
+                    <br>juin 2023 - août 2023
+                    <br>Bamako, Mali</p>
+                </div>
+                <img
+                  src="{{ url_for('static', filename='assets/professional.png') }}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
                   <h3 class="skill-h3">Stagiaire DBA Oracle</h3>
                   <p>Direction Générale des Impôts du Mali (DGI)
-                    <br>01/2023 - 06/2023
+                    <br>janv. 2023 - juin 2023
                     <br>Bamako, Mali</p>
                 </div>
               </article>
@@ -224,7 +238,7 @@
                 <div>
                   <h3 class="skill-h3">Développeur Full-stack</h3>
                   <p>Rhapsodie
-                    <br>04/2020 - 01/2023
+                    <br>avril 2020 - mai 2022
                     <br>Bamako, Mali</p>
                 </div>
               </article>
@@ -242,6 +256,31 @@
         <h1 class="title">Projets</h1>
         <div class="experience-details-container">
           <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="{{ url_for('static', filename='assets/buymymusic.png') }}"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">BuyMyMusic</h2>
+              <p>Dart, Flutter, Google Cloud, Firebase, RESTful API</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://play.google.com/store/apps/details?id=com.buymymusic')"
+                >
+                  App Android
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="alert('Bientôt Disponible !')"
+                >
+                  App iOS
+                </button>
+              </div>
+            </div>
             <div class="details-container color-container">
               <div class="article-container">
                 <img
@@ -270,31 +309,6 @@
                   onclick="window.open('https://hub.docker.com/r/konarehb/flask-portfolio')"
                 >
                   Docker
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="{{ url_for('static', filename='assets/rhapsodie.png') }}"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Rhapsodie</h2>
-              <p>Java, JavaScript, HTML, CSS</p>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="window.open('https://app-rhapsodie.web.app')"
-                >
-                  Site Web
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="window.open('https://play.google.com/store/apps/details?id=com.rhapsodie')"
-                >
-                  App Android
                 </button>
               </div>
             </div>

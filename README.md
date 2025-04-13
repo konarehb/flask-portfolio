@@ -32,9 +32,9 @@ Voici les liens du projet :
 Pour déployer localement ce projet, suivez ces étapes :
 
 1. Clonez ce repository.
-2. Installez les dépendances avec `pip install -r requirements.txt`.
-3. Lancez l'application avec `python app.py`.
-4. Ouvrez votre navigateur et accédez à `http://localhost:5000`.
+2. Installez les dépendances avec `pip3 install -r requirements.txt`.
+3. Lancez l'application avec `python3 app.py`.
+4. Ouvrez votre navigateur et accédez à `http://localhost:5500`.
 
 ## Comment Déployer avec Docker 🐳
 
@@ -43,8 +43,8 @@ Pour déployer ce projet en utilisant Docker, suivez ces étapes :
 1. Assurez-vous d'avoir Docker installé sur votre machine.
 2. Clonez ce repository.
 3. À la racine du projet, construisez l'image Docker en utilisant la commande suivante : `docker build -t nom_image`. Remplacez `nom_image` par le nom que vous souhaitez donner à votre image Docker.
-4. Lancez un conteneur Docker à partir de l'image construite : `docker run -p 5000:5000 nom_image`. Cela expose le port 5000 de votre conteneur Docker sur votre machine locale.
-5. Ouvrez votre navigateur et accédez à `http://localhost:5000` pour voir l'application Flask en cours d'exécution.
+4. Lancez un conteneur Docker à partir de l'image construite : `docker run -p 5500:5500 nom_image`. Cela expose le port 5500 de votre conteneur Docker sur votre machine locale.
+5. Ouvrez votre navigateur et accédez à `http://localhost:5500` pour voir l'application Flask en cours d'exécution.
 
 ## Captures d'écran
 
