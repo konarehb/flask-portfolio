@@ -93,6 +93,10 @@
   footer p {
     padding-bottom: 3rem;
   }
+  .project-details-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
   .article-container {
     justify-content: space-between;
   }
